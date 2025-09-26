@@ -130,14 +130,24 @@ Before running tests, ensure you have:
 
 #### 2. Test Data Preparation
 
-Test data is automatically copied to `./data/` directory with the following structure:
+**test_1_2 data is included in the repository.** For additional test data, copy from the KOBIC server:
+
+```bash
+# Copy additional test data (for KOBIC users only)
+cp -r /home/kobic/fastq-load.py_test_data/data/test_1_1 ./data/
+cp -r /home/kobic/fastq-load.py_test_data/data/test_1_3 ./data/
+cp -r /home/kobic/fastq-load.py_test_data/data/test_1_4 ./data/
+cp -r /home/kobic/fastq-load.py_test_data/data/test_2_1 ./data/
+```
+
+Test data structure:
 ```
 data/
-├── test_1_1/          # Single-end test data
-├── test_1_2/          # Paired-end test data  
-├── test_1_3/          # 10X single-cell test data
-├── test_1_4/          # 10X sample barcode test data
-└── test_2_1/          # Single-cell genomic test data
+├── test_1_1/          # Single-end test data (2.0GB)
+├── test_1_2/          # Paired-end test data (38MB) - included in repo
+├── test_1_3/          # 10X single-cell test data (19GB)
+├── test_1_4/          # 10X sample barcode test data (7.8GB)
+└── test_2_1/          # Single-cell genomic test data (11GB)
 ```
 
 #### 3. Running Tests
