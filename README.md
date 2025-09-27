@@ -130,7 +130,7 @@ Before running tests, ensure you have:
 
 #### 2. Test Data Preparation
 
-**test_1_2 data is included in the repository.** For additional test data, copy from the KOBIC server:
+**test_1_2 data is included in the repository.** For additional test data, copy from the DDBJ SC server:
 
 ```bash
 # Copy additional test data (for KOBIC users only)
